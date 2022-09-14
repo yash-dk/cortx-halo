@@ -6,12 +6,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Insatll npm modules
-      - run: |
+        run: |
               cd manager/gui/
               npm ci
       
       - name: Create Build
-      - run:  npm run build
+        run:  npm run build
               
       - name: Run Tests
-      - run:  npm run test:unit
+        run:  npm run test:unit
